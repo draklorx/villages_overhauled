@@ -4,6 +4,7 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -27,7 +28,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COBBLED_SANDSTONE = register(
             "cobbled_sandstone", () -> new Block(
-                    AbstractBlock.Properties.create(Material.ROCK)
+                    AbstractBlock.Properties.create(Material.ROCK, MaterialColor.SAND)
+                            .setRequiresTool()
                             .hardnessAndResistance(0.8F)
                             .sound(SoundType.STONE)
                             .harvestTool(ToolType.PICKAXE)
