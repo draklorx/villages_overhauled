@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "villages_overhauled:block/sand_path_side",
+    "bottom": "villages_overhauled:block/sand_path_bottom",
+    "top": "villages_overhauled:block/sand_path_top"
+  }
+}
