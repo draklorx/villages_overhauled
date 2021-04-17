@@ -2,7 +2,6 @@ package space.gamr.villages_overhauled.data.client;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
-import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import space.gamr.villages_overhauled.VillagesOverhauled;
 
@@ -12,13 +11,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         super(generator, VillagesOverhauled.MOD_ID, existingFileHelper);
     }
 
-
-
     @Override
     protected void registerModels() {
-        withExistingParent("sand_path", modLoc("block/sand_path"));
         withExistingParent("cobbled_sandstone", modLoc("block/cobbled_sandstone"));
-
-        //ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
+        withExistingParent("sand_path", modLoc("block/sand_path"));
     }
 }
