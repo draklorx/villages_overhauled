@@ -1,8 +1,48 @@
 {
-  "parent": "minecraft:block/cube_bottom_top",
+  "parent": "minecraft:block/block",
   "textures": {
     "side": "villages_overhauled:block/sand_path_side",
-    "bottom": "villages_overhauled:block/sand_path_bottom",
-    "top": "villages_overhauled:block/sand_path_top"
-  }
+    "top": "villages_overhauled:block/sand_path_top",
+    "bottom": "minecraft:block/sand",
+    "particle": "minecraft:block/sand"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        15,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "#bottom",
+          "cullface": "down"
+        },
+        "up": {
+          "texture": "#top"
+        },
+        "north": {
+          "texture": "#side",
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "east": {
+          "texture": "#side",
+          "cullface": "east"
+        }
+      }
+    }
+  ]
 }
