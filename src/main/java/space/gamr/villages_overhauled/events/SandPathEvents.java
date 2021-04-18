@@ -1,7 +1,12 @@
 package space.gamr.villages_overhauled.events;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.TableLootEntry;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -21,5 +26,4 @@ public class SandPathEvents {
             event.setFinalState(ModBlocks.SAND_PATH.get().getDefaultState());
         }
     }
-
 }
